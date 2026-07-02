@@ -133,12 +133,15 @@
     padding:1px 8px;border-radius:4px;margin-left:7px;vertical-align:middle;
   }
   .apply-form input[type=text],
-  .apply-form input[type=email]{
+  .apply-form input[type=email],
+  .apply-form textarea{
     width:100%;padding:11px 12px;border:1px solid #cdd5de;border-radius:8px;
     font-size:15px;font-family:inherit;color:var(--text);background:#fff;
   }
+  .apply-form textarea{resize:vertical;line-height:1.6;}
   .apply-form input[type=file]{width:100%;font-size:14px;color:var(--text);}
-  .apply-form input:focus{
+  .apply-form input:focus,
+  .apply-form textarea:focus{
     outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,168,.15);
   }
   .apply-form .hint{color:var(--muted);font-size:12.5px;margin:7px 0 0;}
@@ -322,6 +325,10 @@
         <div class="field">
           <label for="f-referrer">ご紹介者（どなたからの紹介か） <span class="opt">任意</span></label>
           <input type="text" id="f-referrer" name="ご紹介者" placeholder="例：FromTo 宮城 ／ 知人の紹介 など">
+        </div>
+        <div class="field">
+          <label for="f-comment">コメントなど <span class="opt">任意</span></label>
+          <textarea id="f-comment" name="コメントなど" rows="5" placeholder="ご質問・ご希望・自己PR など、ご自由にご記入ください。"></textarea>
         </div>
         <div class="field">
           <label for="f-resume">職務経歴書（もしあれば） <span class="opt">任意</span></label>
