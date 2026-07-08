@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>営業事務／CSサポート 募集要項 ｜ 株式会社FromTo</title>
+<title>採用情報・募集職種一覧 ｜ 株式会社FromTo</title>
 <style>
   :root{
     --navy:#163259;
@@ -45,115 +45,66 @@
   .hero .catch{
     font-size:16px;opacity:.95;margin:0 auto;max-width:820px;
   }
-  .tags{margin-top:26px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
-  .tag{
-    background:rgba(255,255,255,.16);
-    border:1px solid rgba(255,255,255,.35);
-    padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;
-  }
 
-  /* ===== Card / Section ===== */
-  .card{
+  /* ===== Job cards ===== */
+  .section-label{
+    margin:38px 0 4px;color:var(--navy);font-size:19px;font-weight:800;
+    padding-left:14px;border-left:5px solid var(--accent);line-height:1.4;
+  }
+  .job{
     background:var(--card);
     border:1px solid var(--line);
     border-radius:14px;
     padding:30px 32px;
-    margin-top:24px;
+    margin-top:22px;
     box-shadow:0 1px 3px rgba(20,40,70,.04);
   }
-  .card:first-of-type{margin-top:-28px;position:relative;}
-  h2{
-    font-size:19px;color:var(--navy);margin:0 0 18px;
-    padding-left:14px;border-left:5px solid var(--accent);
-    line-height:1.4;
+  .job-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px;}
+  .job h2{
+    font-size:20px;color:var(--navy);margin:0;line-height:1.4;
   }
-  h3{font-size:15.5px;color:var(--blue);margin:22px 0 10px;}
-  p{margin:0 0 12px;}
-  ul{margin:0 0 4px;padding-left:1.3em;}
-  li{margin-bottom:7px;}
-  .lead{color:var(--muted);font-size:15px;}
-
-  /* ===== Highlight box ===== */
-  .highlight{
-    background:var(--accent-soft);
-    border-radius:10px;padding:18px 22px;margin:8px 0 4px;
+  .status{
+    display:inline-block;background:var(--accent);color:#fff;
+    font-size:12px;font-weight:700;padding:3px 12px;border-radius:999px;white-space:nowrap;
   }
-  .highlight ul{margin:0;}
-
-  /* ===== Spec table ===== */
-  table.spec{width:100%;border-collapse:collapse;margin-top:4px;}
+  .job .desc{margin:6px 0 14px;color:var(--text);}
+  .tags{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px;}
+  .tag{
+    background:var(--accent-soft);color:#116b50;
+    padding:4px 12px;border-radius:999px;font-size:12.5px;font-weight:600;
+  }
+  table.spec{width:100%;border-collapse:collapse;margin:0 0 18px;}
   table.spec th,table.spec td{
-    text-align:left;vertical-align:top;padding:14px 12px;border-bottom:1px solid var(--line);
+    text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line);font-size:14.5px;
   }
   table.spec th{
-    width:170px;color:var(--navy);font-weight:700;font-size:14.5px;
+    width:110px;color:var(--navy);font-weight:700;
     background:#fafbfc;white-space:nowrap;
   }
-  table.spec td{color:var(--text);}
   table.spec tr:last-child th,table.spec tr:last-child td{border-bottom:none;}
+  .job-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .detailbtn{
+    display:inline-block;background:var(--blue);color:#fff;text-decoration:none;
+    font-weight:700;padding:12px 22px;border-radius:9px;font-size:15px;
+  }
+  .detailbtn:hover{background:#1e548f;}
+  .posted{color:var(--muted);font-size:12.5px;margin-left:auto;align-self:center;}
 
-  /* ===== Requirement columns ===== */
-  .req-block{margin-bottom:6px;}
-  .req-label{
-    display:inline-block;font-size:13px;font-weight:700;color:#fff;
-    background:var(--blue);padding:3px 12px;border-radius:6px;margin-bottom:10px;
+  /* ===== Company ===== */
+  .company{
+    background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:30px 32px;margin-top:34px;
   }
-  .req-label.welcome{background:var(--accent);}
-  .req-label.fit{background:#e0903b;}
-
-  /* ===== CTA ===== */
-  .cta{
-    background:var(--navy);color:#fff;border-radius:14px;
-    padding:34px 32px;margin-top:24px;text-align:center;
+  .company h2{
+    font-size:19px;color:var(--navy);margin:0 0 14px;
+    padding-left:14px;border-left:5px solid var(--accent);line-height:1.4;
   }
-  .cta h2{color:#fff;border:none;padding:0;margin:0 0 14px;font-size:21px;}
-  .cta p{opacity:.92;margin-bottom:20px;}
-  .mailbtn{
-    display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
-    font-weight:700;font-size:16px;padding:13px 30px;border-radius:10px;margin:6px 8px;
+  .link-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px;}
+  .linkbtn{
+    display:inline-block;background:var(--blue);color:#fff;text-decoration:none;
+    font-weight:700;padding:11px 18px;border-radius:8px;font-size:14.5px;
   }
-  .mailbtn.alt{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);}
-  .cta .note{font-size:13px;opacity:.8;margin-top:18px;}
-
-  /* ===== Apply form ===== */
-  .apply-form{
-    max-width:520px;margin:6px auto 0;text-align:left;
-    background:#fff;border-radius:12px;padding:26px 24px;
-  }
-  .apply-form .field{margin-bottom:17px;}
-  .apply-form label{
-    display:block;color:var(--navy);font-weight:700;font-size:14px;margin-bottom:7px;
-  }
-  .apply-form .req{
-    display:inline-block;background:#d6483b;color:#fff;font-size:11px;font-weight:700;
-    padding:1px 8px;border-radius:4px;margin-left:7px;vertical-align:middle;
-  }
-  .apply-form .opt{
-    display:inline-block;background:#aeb7c2;color:#fff;font-size:11px;font-weight:700;
-    padding:1px 8px;border-radius:4px;margin-left:7px;vertical-align:middle;
-  }
-  .apply-form input[type=text],
-  .apply-form input[type=email],
-  .apply-form textarea{
-    width:100%;padding:11px 12px;border:1px solid #cdd5de;border-radius:8px;
-    font-size:15px;font-family:inherit;color:var(--text);background:#fff;
-  }
-  .apply-form textarea{resize:vertical;line-height:1.6;}
-  .apply-form input[type=file]{width:100%;font-size:14px;color:var(--text);}
-  .apply-form input:focus,
-  .apply-form textarea:focus{
-    outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,168,.15);
-  }
-  .apply-form .hint{color:var(--muted);font-size:12.5px;margin:7px 0 0;}
-  .submitbtn{
-    width:100%;background:var(--accent);color:#fff;border:none;border-radius:9px;
-    padding:15px;font-size:16px;font-weight:700;cursor:pointer;font-family:inherit;margin-top:6px;
-  }
-  .submitbtn:hover{background:#158a67;}
-  .apply-done{
-    display:none;background:var(--accent-soft);color:var(--navy);border-radius:10px;
-    padding:15px 18px;max-width:520px;margin:14px auto 0;font-size:14px;text-align:left;line-height:1.7;
-  }
+  .linkbtn.secondary{background:var(--accent);}
 
   footer{
     text-align:center;color:var(--muted);font-size:12.5px;margin-top:34px;line-height:1.7;
@@ -161,189 +112,84 @@
 
   @media(max-width:600px){
     .hero h1{font-size:23px;}
-    .card{padding:24px 20px;}
-    table.spec th{width:108px;font-size:13px;padding:12px 8px;}
-    table.spec td{padding:12px 8px;}
+    .job,.company{padding:24px 20px;}
+    table.spec th{width:90px;font-size:13px;padding:9px 8px;}
+    table.spec td{padding:9px 8px;font-size:13.5px;}
   }
 </style>
 </head>
 <body>
 
-  <!-- ===== HERO ===== -->
   <div class="hero">
     <div class="inner">
-      <div class="brand">FROM-TO INC.｜企業版ふるさと納税 × 地方開拓</div>
-      <h1>企業と自治体をつなぐ<br>営業事務／CSサポート 募集</h1>
-      <p class="catch">企業版ふるさと納税という制度を活かし、企業と自治体をつなぐ営業代行サービスを運営しています。<br>契約後の企業・自治体間の業務を、円滑に進めるオペレーションを担うメンバーを募集します。</p>
-      <div class="tags">
-        <span class="tag">週3日からOK</span>
-        <span class="tag">駅近5分以内</span>
-        <span class="tag">在宅OK</span>
-        <span class="tag">柔軟な働き方</span>
-      </div>
+      <div class="brand">FROM-TO INC.｜日本全国に新たなビジネスエコシステムを作る</div>
+      <h1>FromTo 採用情報</h1>
+      <p class="catch">企業と自治体をつなぎ、企業の地方市場開拓を支援するFromToで、<br>一緒に事業をつくるメンバーを募集しています。現在の募集職種は以下のとおりです。</p>
     </div>
   </div>
 
   <div class="wrap">
 
-    <!-- ===== 仕事内容 ===== -->
-    <section class="card">
-      <h2>仕事内容</h2>
-      <p class="lead">企業が当社サービスを契約した後、企業と自治体をつなぐ業務を円滑に進めるオペレーションを担っていただきます。チームの一員として、円滑な業務運営をサポートしていただくポジションです。</p>
-      <div class="highlight">
-        <ul>
-          <li>企業・自治体への事務連絡（メール／電話／コミュニケーションツール等の利用）</li>
-          <li>業務連絡・企業と自治体の3者間面談の設定</li>
-          <li>オペレーションのマニュアルづくり</li>
-          <li>その他リサーチ業務</li>
-        </ul>
-      </div>
-      <p style="margin-top:16px;color:var(--muted);">柔軟な働き方が可能で、自分のペースで仕事に取り組むことができます。</p>
-    </section>
+    <div class="section-label">募集中の職種</div>
 
-    <!-- ===== アピールポイント ===== -->
-    <section class="card">
-      <h2>この仕事の魅力</h2>
-      <p>当社は <strong>基本フルリモート</strong> での仕事になります。</p>
-      <p>最近では<strong>AIを活用した業務の効率化</strong>や、<strong>自作のAIツールをもとに業務を進める</strong>といった取り組みを行っています。そのため、今後のAI技術を身につけていきたい、あるいは生かしていきたいという方にとっては、最高の職場だと思います。</p>
-      <p>営業事務という役割をお願いしますが、<strong>実績とやる気次第で、他の業務もお任せしていきたい</strong>と考えています。</p>
-      <div class="highlight">
-        <p style="margin:0;"><strong>📍 静岡県浜松市在住の方へ</strong><br>
-        浜松市のコワーキングスペースを活用いただけます。浜松駅から徒歩5分圏内のアクセスで、通勤にも便利です。</p>
+    <section class="job">
+      <div class="job-head">
+        <span class="status">募集中</span>
+        <h2>営業人材（法人営業）</h2>
       </div>
-      <p style="margin-top:16px;">新たな挑戦をしたい方、これまでの経験を活かしたい方のご応募をお待ちしております。</p>
-    </section>
-
-    <!-- ===== 募集要項 ===== -->
-    <section class="card">
-      <h2>募集要項</h2>
+      <p class="desc">東京都内のB2B企業への新規開拓からクロージングまでを担い、FromToの「最初の営業の型」を一緒につくるポジションです。将来的には営業チームの立ち上げも担っていただく想定です。</p>
+      <div class="tags">
+        <span class="tag">法人営業経験者歓迎</span>
+        <span class="tag">AI活用</span>
+        <span class="tag">東京都内勤務</span>
+        <span class="tag">初回3ヶ月は業務委託</span>
+      </div>
       <table class="spec">
-        <tr>
-          <th>雇用形態</th>
-          <td>業務委託／契約社員<br>
-          <span style="color:var(--muted);font-size:14px;">（契約社員は応相談。正社員登用の可能性あり）</span></td>
-        </tr>
-        <tr>
-          <th>勤務時間</th>
-          <td>平日（月〜金）の日中に勤務いただきます。<br>
-          ・<strong>1日3時間〜／週3日〜</strong>OK<br>
-          ・<strong>週稼働10時間〜</strong>を希望<br>
-          <span style="color:var(--muted);font-size:14px;">※作業内容により稼働は調整。スキルや経験に応じて実務時間を増やします。</span></td>
-        </tr>
-        <tr>
-          <th>休日・休暇</th>
-          <td>土日祝は基本的に休み<br>
-          <span style="color:var(--muted);font-size:14px;">※業務委託契約のため相談可能。休日は事前相談の上、調整可能です。</span></td>
-        </tr>
-        <tr>
-          <th>勤務地</th>
-          <td>基本フルリモート（在宅OK）<br>
-          <span style="color:var(--muted);font-size:14px;">※はじめの1ヶ月間は業務内容・オペレーション説明のため、可能ならリアル勤務をお願いします。</span></td>
-        </tr>
-        <tr>
-          <th>アクセス</th>
-          <td>浜松駅から徒歩約5分（コワーキングスペース利用可）</td>
-        </tr>
-        <tr>
-          <th>給与</th>
-          <td>時給 <strong>1,500円 〜 2,000円以上</strong><br>
-          ・研修期間（3ヶ月間）：時給 <strong>1,500円</strong><br>
-          ・研修終了後：時給 <strong>1,800円</strong><br>
-          ・その後：業務経験・実績などを踏まえて昇給。時給 <strong>2,000円以上</strong>も、業務内容により設定可能<br>
-          <span style="color:var(--muted);font-size:14px;">※研修は3ヶ月間を予定していますが、実力に応じて早めに切り上げ、期間を短縮することも可能です。<br>
-          ※昇給は業務経験・実績などに応じて随時行います。賞与なし／通勤手当なし。</span></td>
-        </tr>
+        <tr><th>雇用形態</th><td>業務委託（初回3ヶ月／以降の関わり方は相談）</td></tr>
+        <tr><th>勤務地</th><td>東京都内（リモートワーク併用可）</td></tr>
+        <tr><th>給与</th><td>月額40万円〜45万円前後（経験・稼働条件により相談）</td></tr>
       </table>
-    </section>
-
-    <!-- ===== 求める人材 ===== -->
-    <section class="card">
-      <h2>求める人材</h2>
-
-      <div class="req-block">
-        <span class="req-label">必須条件</span>
-        <ul>
-          <li>ビジネスメールの対応</li>
-          <li>電話応対</li>
-          <li>PC操作</li>
-          <li>Officeツール（Word／Excel／PowerPoint）の利用</li>
-          <li>（可能であれば）浜松市のオフィスに来られる方</li>
-        </ul>
-      </div>
-
-      <div class="req-block">
-        <span class="req-label welcome">歓迎する資格・経験</span>
-        <ul>
-          <li>営業事務の経験</li>
-          <li>CS（カスタマーサポート／サクセス）経験</li>
-          <li>マーケティングなどの経験</li>
-          <li>自治体・官公庁との応対経験</li>
-          <li>Slack・Chatwork 等のコミュニケーションツールの利用経験</li>
-          <li>スプレッドシート等のクラウドツールの利用経験</li>
-          <li>生成AI等のツール活用</li>
-        </ul>
-      </div>
-
-      <div class="req-block">
-        <span class="req-label fit">こんな方を歓迎します</span>
-        <ul>
-          <li>地方創生視点に興味・関心がある方</li>
-          <li>自治体・企業双方の気持ちに寄り添えて、メールなどができる方</li>
-          <li>フットワークが軽く、自ら学び自走できる方</li>
-          <li>浜松でCSチームを一緒に作り上げていける方</li>
-        </ul>
+      <div class="job-actions">
+        <a class="detailbtn" href="sales.html">募集要項の詳細を見る</a>
+        <span class="posted">掲載日：2026-07-08</span>
       </div>
     </section>
 
-    <!-- ===== 応募フォーム ===== -->
-    <!-- ▼ action の recruit@from-to.biz は、初回送信時に届く確認メールのリンクを1度クリックすると有効化されます（FormSubmit.co・無料/登録不要）。
-         有効化後は、フォーム送信内容が recruit@from-to.biz にメールで届きます（職務経歴書も添付されます）。 -->
-    <section class="cta" id="apply">
-      <h2>ご応募・お問い合わせ</h2>
-      <p>下記フォームに必要事項をご入力のうえ、送信してください。<br>入力内容は、そのまま採用担当へメールで届きます。</p>
+    <section class="job">
+      <div class="job-head">
+        <span class="status">募集中</span>
+        <h2>営業事務／CSサポート</h2>
+      </div>
+      <p class="desc">企業版ふるさと納税を活用した製品寄附仲介サービスで、契約後の企業・自治体間の業務を円滑に進めるオペレーションを担うメンバーを募集します。</p>
+      <div class="tags">
+        <span class="tag">週3日からOK</span>
+        <span class="tag">在宅OK</span>
+        <span class="tag">駅近5分以内</span>
+        <span class="tag">柔軟な働き方</span>
+      </div>
+      <table class="spec">
+        <tr><th>雇用形態</th><td>業務委託／契約社員（正社員登用の可能性あり）</td></tr>
+        <tr><th>勤務地</th><td>基本フルリモート（浜松駅徒歩約5分のコワーキングスペース利用可）</td></tr>
+        <tr><th>給与</th><td>時給1,500円〜2,000円以上（研修期間3ヶ月：時給1,500円）</td></tr>
+      </table>
+      <div class="job-actions">
+        <a class="detailbtn" href="cs.html">募集要項の詳細を見る</a>
+        <span class="posted">掲載日：2026-06-24</span>
+      </div>
+    </section>
 
-      <form class="apply-form" action="https://formsubmit.co/recruit@from-to.biz" method="POST" enctype="multipart/form-data">
-        <!-- 送信設定（非表示） -->
-        <input type="hidden" name="_subject" value="【応募】営業事務／CSサポート">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="true">
-        <input type="hidden" name="_autoresponse" value="この度はご応募いただきありがとうございます。内容を確認のうえ、担当者よりご連絡いたします。― 株式会社FromTo">
-        <input type="text" name="_honey" style="display:none">
-
-        <div class="field">
-          <label for="f-name">お名前 <span class="req">必須</span></label>
-          <input type="text" id="f-name" name="お名前" required placeholder="山田 花子">
-        </div>
-        <div class="field">
-          <label for="f-email">メールアドレス <span class="req">必須</span></label>
-          <input type="email" id="f-email" name="email" required placeholder="example@mail.com">
-        </div>
-        <div class="field">
-          <label for="f-region">お住まいの地域 <span class="req">必須</span></label>
-          <input type="text" id="f-region" name="お住まいの地域" required placeholder="例：静岡県浜松市">
-        </div>
-        <div class="field">
-          <label for="f-referrer">ご紹介者（どなたからの紹介か） <span class="opt">任意</span></label>
-          <input type="text" id="f-referrer" name="ご紹介者" placeholder="例：FromTo 宮城 ／ 知人の紹介 など">
-        </div>
-        <div class="field">
-          <label for="f-comment">コメントなど <span class="opt">任意</span></label>
-          <textarea id="f-comment" name="コメントなど" rows="5" placeholder="ご質問・ご希望・自己PR など、ご自由にご記入ください。"></textarea>
-        </div>
-        <div class="field">
-          <label for="f-resume">職務経歴書（もしあれば） <span class="opt">任意</span></label>
-          <input type="file" id="f-resume" name="attachment" accept=".pdf,.doc,.docx">
-          <p class="hint">※PDF または Word 形式。選択したファイルは、そのまま添付して送信されます。</p>
-        </div>
-        <button type="submit" class="submitbtn">この内容で応募する</button>
-      </form>
-
-      <p class="note">フォームがご利用いただけない場合は <a href="mailto:recruit@from-to.biz?subject=【応募】営業事務／CSサポート" style="color:#fff;text-decoration:underline;">recruit@from-to.biz</a> まで直接ご連絡ください。<br>お問い合わせは代表電話番号もご利用いただけます。</p>
+    <section class="company">
+      <h2>会社情報</h2>
+      <p>株式会社FromToは「日本全国に新たなビジネスエコシステムを作る」をビジョンに、企業版ふるさと納税での製品寄附仲介サービスや、自治体AI参謀プラットフォーム「47 Connect」を展開しています。事業内容や採用に関する情報は、公式ホームページでもご確認いただけます。</p>
+      <div class="link-actions">
+        <a class="linkbtn" href="https://from-to.biz/" target="_blank" rel="noopener noreferrer">公式ホームページを見る</a>
+        <a class="linkbtn secondary" href="https://from-to.biz/recruit/" target="_blank" rel="noopener noreferrer">Recruitページを見る</a>
+      </div>
     </section>
 
     <footer>
-      株式会社FromTo｜企業版ふるさと納税を活かした、企業と自治体をつなぐ営業代行サービス<br>
-      最終更新：2026-06-24
+      株式会社FromTo｜日本全国に新たなビジネスエコシステムを作る<br>
+      最終更新：2026-07-09
     </footer>
 
   </div>
